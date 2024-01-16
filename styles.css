@@ -23,12 +23,16 @@ main{
 
 .container{
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: 60px auto 60px auto;
     grid-template-areas:
+    "t1 t1"
     "i1 i2"
+    "t2 t2"
     "i3 i4";
+    text-align: center;
+    justify-content: center;
 }
     #img1{
         width: 100%;
@@ -49,4 +53,18 @@ main{
         width: 100%;
         height: auto;
         grid-area: i4;
+    }
+    #text1{
+        grid-area: t1;
+        width: 100%;
+        height: auto;
+        background-color: gray;
+        margin-top: auto;
+    }
+    #text2{
+        grid-area: t2;
+        width: 100%;
+        height: auto;
+        background-color: gray;
+        margin-top: auto;
     }
